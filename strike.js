@@ -12,12 +12,17 @@
         var container = document.createElement('div');
         screen.appendChild(container);
 
+        var linkContainer = document.createElement('div');
+        linkContainer.setAttribute('id', 'strike-js-link');
+        linkContainer.innerHTML = '<p>Cf. <a href="https://github.com/thibault/strike-js">Strike-JS</a></p>';
+
         // Create a `p` element for each phrase.
         messages.forEach(function (m) {
             var p = document.createElement('p');
             p.appendChild(document.createTextNode(m));
             container.appendChild(p);
         });
+        container.appendChild(linkContainer);
     };
 
     window.strike = function (strikeDay, messages) {

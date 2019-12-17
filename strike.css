@@ -21,3 +21,15 @@ div#strike-screen div p {
     font-size: 32px;
     text-align: center;
 }
+
+div#strike-screen div#strike-js-link p {
+    font-size: 24px !important;
+}
+
+div#strike-js-link p a:visited {
+    color: white;
+}
+
+div#strike-js-link p a {
+    text-decoration: none;
+}
